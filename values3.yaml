@@ -2,3 +2,4 @@
 # Declare variables to be passed into your templates.
 
 scale: 5
+name: test2
