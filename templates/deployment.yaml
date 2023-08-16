@@ -1,9 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: test2
+  name: {{ .Values.test2 }}
 spec:
-  replicas: {{ .Values.scale }}
+  replicas: {{ .Values.test2.scale }}
   template:
     metadata:
       labels:
@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:{{ .Values.tag }}
+        image: nginx:{{ .Values.test2.tag }}
         ports:
         - containerPort: 80

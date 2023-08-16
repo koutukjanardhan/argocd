@@ -1,5 +1,8 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-scale: 4
+test2:
+      scale: 3
+      name: pod1
+
 
